@@ -1,0 +1,42 @@
+.text-editor-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.text-editor-header{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+.text-editor-fonts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 2/span 2;
+}
+
+.text-editor-fonts div{
+    margin-left: 30px;
+}
+
+.text-editor-fonts select{
+    margin-left: 20px;
+}
+
+
+.textarea{
+    grid-row: 2 /span 4;
+    grid-column: 1/span 5;
+    display: flex;
+    justify-content: space-around;
+}
+.textarea textarea{
+    margin-top: 10px;
+    width: 90%;
+    height: 90%;
+    outline: none;
+    resize: none;
+    font-size: large;
+}
+
